@@ -34,7 +34,7 @@ export interface ApplePayStripeOptions {
   platforms: ['iOS']
 })
 @Injectable()
-export class TextToSpeech extends IonicNativePlugin {
+export class ApplePay extends IonicNativePlugin {
 
   /**
    * Check if Apple Pay is available
