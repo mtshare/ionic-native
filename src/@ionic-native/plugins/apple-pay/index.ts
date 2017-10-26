@@ -18,24 +18,28 @@ export declare class ApplePay extends IonicNativePlugin {
 	* Manually hide any currently visible toast.
 	* @returns {Promise<any>} Returns a Promise that resolves on success.
 	*/
-	getAllowsApplePay(onSuccess?: Function, onFailure?: Function): Observable<any> { return; }
+	@Cordova()
+	getAllowsApplePay(onSuccess?: Function, onFailure?: Function): Promise<any> { return; }
 
 	/**
 	* Manually hide any currently visible toast.
 	* @returns {Promise<any>} Returns a Promise that resolves on success.
 	*/
-	setStripePublishableKey(publishableKey:string, onSuccess?: Function, onFailure?: Function): Observable<any> { return; }
+	@Cordova()
+	setStripePublishableKey(publishableKey:string, onSuccess?: Function, onFailure?: Function): Promise<any> { return; }
 
 	/**
 	* Manually hide any currently visible toast.
 	* @returns {Promise<any>} Returns a Promise that resolves on success.
 	*/
-	setMerchantId(merchantId:string, onSuccess?: Function, onFailure?: Function): Observable<any> { return; }
+	@Cordova()
+	setMerchantId(merchantId:string, onSuccess?: Function, onFailure?: Function): Promise<any> { return; }
 
 	/**
 	* Manually hide any currently visible toast.
 	* @returns {Promise<any>} Returns a Promise that resolves on success.
 	*/
-	getStripeToken(infos:any, onSuccess?: Function, onFailure?: Function): Observable<any> { return; }
+	@Cordova()
+	getStripeToken(infos:any, onSuccess?: Function, onFailure?: Function): Promise<any> { return; }
 }
 
