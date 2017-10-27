@@ -49,9 +49,10 @@ export class ApplePay extends IonicNativePlugin {
    */
   @Cordova({
     successIndex: 1,
-    errorIndex: 2
+    errorIndex: 2,
+    sync: true
   })
-  setStripePublishableKey(publishableKey: string): Promise<any> { return; }
+  setStripePublishableKey(publishableKey: string): void { return; }
 
   /**
    * Stop any current TTS playback
@@ -59,9 +60,10 @@ export class ApplePay extends IonicNativePlugin {
    */
   @Cordova({
     successIndex: 1,
-    errorIndex: 2
+    errorIndex: 2,
+    sync: true
   })
-  setMerchantId(merchantId: string): Promise<any> { return; }
+  setMerchantId(merchantId: string): void { return; }
 
   /**
    * Stop any current TTS playback

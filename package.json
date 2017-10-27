@@ -49,7 +49,7 @@
   "scripts": {
     "start": "npm run test:watch",
     "lint": "gulp lint",
-    "build": "npm run clean && npm run lint && npm run build:core && npm run build:modules",
+    "build": "npm run dsstoreclean && npm run clean && npm run lint && npm run build:core && npm run build:modules",
     "build:core": "ngc -p scripts/build/tsconfig-core.json",
     "build:modules": "node scripts/build/build.js",
     "clean": "rimraf dist .tmp",
@@ -59,7 +59,8 @@
     "postchangelog": "git commit -am \"chore(): update changelog\"",
     "test": "karma start karma.conf.js --single-run",
     "test:watch": "karma start karma.conf.js",
-    "readmes": "gulp readmes"
+    "readmes": "gulp readmes",
+    "dsstoreclean": "find . -name '.DS_Store' -type f -delete"
   },
   "repository": {
     "type": "git",
